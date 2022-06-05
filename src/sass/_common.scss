@@ -13,17 +13,18 @@ body {
     width: 100%;
         padding-left: 20px;
         padding-right: 20px;
-    @media screen and (min-width: 480px){
-        width: 480px;
-    }
-    @media screen and (min-width: 768px){
-        padding-left: 32px;
-        padding-right: 32px;
-        width: 768px;
-    }
-    @media screen and (min-width: 1680px){
-        padding-left: 16px;
-        padding-right: 16px;
-        width: 1680px;
-    }
+        @include mobile{
+            width: 480px;
+        }
+        @include tablet{
+            padding-left: 32px;
+            padding-right: 32px;
+            width: 768px;
+        }
+        @include desktop{
+            padding-left: 16px;
+            padding-right: 16px;
+            width: 1680px;
+        }
+
 }
