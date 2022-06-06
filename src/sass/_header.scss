@@ -1,0 +1,48 @@
+// .logo {}
+
+.logo__link {
+    @extend %link;
+
+}
+
+.logo__text {
+    color: $text-color-dark;
+
+    &--secondary {
+        color: $text-color-white;
+        font-weight: 700;
+        font-size: 5px;
+        line-height: 1.2;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+
+    }
+
+    &--accent {
+        color: $accent-color;
+        margin-left: 4px;
+    }
+}
+
+.nav__list {
+    @extend %list;
+    color: $text-color-white;
+}
+
+.nav__link {
+    display: block;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+
+    &.current {
+        color: $accent-color;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
