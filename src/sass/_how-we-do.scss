@@ -1,34 +1,35 @@
-.solution__container{
-width: 280px;
-margin: 0 auto;
-@media screen and (min-width: 768px){
-        width: 688px;
-    }
-@media screen and (min-width: 1680px){
-        width: 1340px;
-    }
+// .solution__container{
+//     width: unset;
+// width: 280px;
+// margin: 0 auto;
+// @media screen and (min-width: 768px){
+//         width: 688px;
+//     }
+// @media screen and (min-width: 1680px){
+//         width: 1340px;
+//     }
 
-}
+// }
 .solutions-title {
     margin-top: 200px;
         margin-bottom: 30px;
     font-size: 21px;
     line-height: 1.43;
     color: $text-color-dark;
-    text-align: left;
+    text-align: center;
     
-
+    @media screen and (min-width:480px) {
+            margin-top: 100px;
+        }
     @media screen and (min-width:768px) {
         font-size: 26px;
         line-height: 1.27;
-        margin-top: 220px;
     }
 
-    @media screen and (min-width:1280px) {
+    @media screen and (min-width:1440px) {
         font-size: 42px;
         line-height: 63px;
-        margin-top: 1.5;
-        text-align: start;
+        text-align: left;
     }
 
     @media screen and (min-width:1680px) {
@@ -52,7 +53,7 @@ margin: 0 auto;
     &__item {
         margin-top: 15px;
         padding: 0px 28px 28px 28px;
-
+        
         // width: 280px;
         // height: 267px;
 
@@ -67,16 +68,23 @@ margin: 0 auto;
                 margin-bottom: 51px;
             }
         }
-
-        &:hover .solutions-list__svg {
+        // &:hover{
+        //     fill: $text-color-white;
+        //     color: $text-color-white;
+        //     background-color: $accent-color;
+        // }
+        &:hover .solutions-list__svg,
+        &:focus .solutions-list__svg {
             fill: $text-color-white;
         }
 
-        &:hover .solutions-list__title {
+        &:hover .solutions-list__title,
+        &:focus .solutions-list__title {
             color: $text-color-white;
         }
 
-        &:hover .solutions-list__text {
+        &:hover .solutions-list__text,
+        &:focus .solutions-list__text {
             color: $text-color-white;
         }
 
@@ -96,13 +104,19 @@ margin: 0 auto;
             }
         }
 
-        @media screen and(min-width:1280px) {
-            // width: 390px;
-            flex-basis: calc(100% / 3 - 32px);
-                margin-left: 32px;
-            // height: 341px;
-            padding-right: 50px;
-            padding-left: 50px;
+        // @media screen and(min-width:1280px) {
+        //     flex-basis: calc(100% / 2 - 32px);
+        //     margin-left: 32px;
+
+        //     width: 390px;
+        //     height: 341px;
+        //     padding-right: 50px;
+        //     padding-left: 50px;
+        // }
+        @media screen and(min-width:1440px) {                    
+                    flex-basis: calc(100% / 3 - 32px);
+                    margin-left: 32px;
+                    
         }
 
         @media screen and(min-width:1680px) {
@@ -210,17 +224,17 @@ margin: 0 auto;
 
     @media screen and(min-width:768px) {
         justify-content: space-between;
-        width: 603px;
+        // width: 603px;
         margin-left: -32px;
     }
 
-    @media screen and(min-width:1280px) {
-        width: 1210px;
-    }
+    // @media screen and(min-width:1280px) {
+    //     width: 1210px;
+    // }
 
-    @media screen and(min-width:1680px) {
-        width: 1340px;
-    }
+    // @media screen and(min-width:1680px) {
+    //     width: 1340px;
+    // }
 }
 
 .solutions-list__item:hover .solutions-list__text::before {
