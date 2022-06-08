@@ -1,7 +1,6 @@
 .advantages {
     justify-content: center;
     margin-bottom: 45px;
-    background-color: #E5E5E5;
     @include tablet {
         margin-bottom: 85px;
     }
@@ -36,7 +35,7 @@
     background-repeat: no-repeat;
     // width: 60px;
     height: 60px;
-    
+    color: $text-color-dark;
     &+&{
         margin-top: 24px;
         @include tablet {
