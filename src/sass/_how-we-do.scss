@@ -12,6 +12,10 @@
 // }
 .solutions{
 margin-top: 40px;
+margin-bottom:40px;
+@media screen and (min-width:1680px){
+    margin-bottom: 80px;
+}
 }
 .solutions-title {
     // margin-top:40px;
@@ -54,23 +58,27 @@ margin-top: 40px;
     
 
     &__item {
-        margin-top: 15px;
-        padding: 0px 28px 28px 28px;
+        margin-bottom: 16px;
+        padding: 32px 28px 28px 28px;
         
         // width: 280px;
         // height: 267px;
-
+        &:nth-child(6) {
+                @media screen and(min-width:320px) and(max-width:767px) {
+                    margin-bottom: 0px;
+                }
+            }
         
         list-style: none;
         text-decoration: none;
         box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
         transition: background-color 250ms $timimg-function;
 
-        &:nth-child(6) {
-            @media screen and(min-width:320px) and(max-width:767px) {
-                margin-bottom: 51px;
-            }
-        }
+        // &:nth-child(6) {
+        //     @media screen and(min-width:320px) and(max-width:767px) {
+        //         margin-bottom: 51px;
+        //     }
+        // }
         & .solutions-list__svg,
         & .solutions-list__title,
         & .solutions-list__text{
@@ -101,10 +109,11 @@ margin-top: 40px;
             // width: 292px;
             flex-basis: calc(100% / 2 - 32px);
                 margin-left: 32px;
+                margin-bottom: 32px;
 
             &:nth-child(n+5) {
-                @media screen and(min-width:768px) and(max-width:1279px) {
-                    margin-bottom: 51px;
+                @media screen and(min-width:768px) and(max-width:1439px) {
+                    margin-bottom: 0px;
                 }
             }
         }
@@ -121,11 +130,13 @@ margin-top: 40px;
         @media screen and(min-width:1440px) {                    
                     flex-basis: calc(100% / 3 - 32px);
                     margin-left: 32px;
-                    
+        &:nth-child(n+4) {
+                    margin-bottom: 0px;
+                }
         }
 
         @media screen and(min-width:1680px) {
-            width: 433px;
+            // width: 433px;
             // height: 397px;
             padding-right: 40px;
             padding-left: 40px;
