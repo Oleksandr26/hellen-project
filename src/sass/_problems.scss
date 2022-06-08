@@ -5,8 +5,11 @@
         position: relative;
         counter-reset: number;
         background-image: linear-gradient(to bottom, #111517 60%, #ffffff 40%);
-        // z-index: 1;
+        
         overflow: hidden;
+        @media screen and (min-width:1680px){
+            z-index: 1;
+        }
         &__icon {
                 display: none;
             }
@@ -132,7 +135,7 @@
                 width: 255px;
                 height: 272px;
                 fill: $text-color-grey;
-                // z-index: -1;
+                
             }
             &__title {
                 width: 866px;
@@ -159,6 +162,13 @@
                 }
             }
         }
+@media screen and (min-width: 1680px) {
+    .problems {
+        &__icon {
+                z-index: -1;
+        }
+    }
+}
 .problems__icon {
                     animation: fire 3s $timimg-function infinite;
                 }
