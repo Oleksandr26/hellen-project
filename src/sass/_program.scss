@@ -7,6 +7,7 @@ ol {
 .program {
     margin: 0 auto;
 
+
     @media screen and (max-width: 1679px) {
         padding-top: 60px;
         padding-bottom: 184px;
@@ -27,7 +28,7 @@ ol {
 }
 
 .section-title {
-
+    color: $text-color-white;
     @media screen and (max-width: 767px) {
         text-align: center;
         padding-left: 20px;
@@ -61,7 +62,7 @@ ol {
 }
 
 .semestr-list__title {
-
+        color: $text-color-white;
     @media screen and (min-width: 1680px) {
         margin-top: 40px;
         margin-bottom: 24px;
