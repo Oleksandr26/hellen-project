@@ -47,10 +47,9 @@
         text-transform: uppercase;
 
         @media screen and (min-width:768px) {
-            font-weight: 700;
             font-size: 8px;
             line-height: 1.25;
-            letter-spacing: 0.18em;
+            
         }
     }
 
@@ -99,18 +98,6 @@
     }
 }
 
-// .nav__item {
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.21;
-    
-//     display: flex;
-//     align-items: center;
-//     text-align: center;
-//     text-transform: uppercase;
-//     color: $text-color-lightgrey;
-// }
-
 .nav__item {
     margin-right: 40px;
 }
@@ -151,11 +138,6 @@
     }
 }
 
-// .header__content {
-//     display: inline-flex;
-//     justify-content: flex-end;
-// }
-
 .btn-menu {
     @extend %button;
     background-color: transparent;
@@ -166,18 +148,6 @@
     &:hover,
     &:focus {
         fill: $accent-color;
-    }
-
-    &--open {
-        // position: absolute;
-        // top: 28px;
-        // right: 20px;
-    }
-
-    &--close {
-        // position: absolute;
-        // top: 20px;
-        // right: 20px;
     }
 
     @media screen and (min-width:1680px){
