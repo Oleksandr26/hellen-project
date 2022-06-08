@@ -37,7 +37,7 @@
       aria-label="button to open mobile menu"
       aria-expended="false"
       aria-controls="nav__menu"
-      data-menu-button
+      data-menu-open
     >
       <svg width="24" height="16">
         <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
@@ -46,7 +46,7 @@
   </div>
 
   <div
-    class="mobile-menu mobile-menu__container container is-hidden"
+    class="mobile-menu mobile-menu__container container"
     id="mobile-menu"
     data-menu
   >
@@ -72,7 +72,7 @@
         aria-label="button to close mobile menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
-        data-menu-button
+        data-menu-close
       >
         <svg width="16" height="16">
           <use
@@ -99,7 +99,7 @@
         </li>
       </ul>
 
-      <button type="button" class="btn-menu--call" data-modal-open>
+      <button type="button" class="btn-menu--call" data-menu-modal-open>
         Consultation by phone
       </button>
     </div>
