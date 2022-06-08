@@ -29,29 +29,12 @@
     }
 }
 
-.logo__text--secondary{
-    display: block;
-    margin-bottom: 21px;
-
-    font-weight: 700;
-    font-size: 5px;
-    line-height: 1.2;
-
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-        color: #111518;
-        @include tablet{
-        margin: 0;
-        font-size: 8px;
-        line-height: 1.25;
-
-    }
-}
 
 .contact__link{
     @extend %link;
     display: flex;
     align-items: center;
+    margin-top: 20px;
     margin-bottom: 21px;
 
     font-style: normal;
@@ -68,6 +51,7 @@
         height: 40px;
         background-color: #B9B9B9;
         }
+        margin-top: 0;
         margin-bottom: 0;
         margin-left: auto;
 
@@ -100,6 +84,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/instagram-desktop@2x-min.jpg);
+    }
 }
 
 .rights{

@@ -12,7 +12,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/contactsbg-mobile-min.png);
+    background-image: url(../images/contactsbg-mob2x-min.png);
     }
     @include tablet{
         padding: 40px 20px;
@@ -21,7 +21,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/contactsbg-tablet-min.png);
+    background-image: url(../images/contactsbg-tablet2x-min.png);
     }
     }
     @include desktop{
@@ -31,7 +31,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/contactsbg-min.png);
+    background-image: url(../images/contactsbg2x-min.png);
     }
     }
 }
@@ -71,7 +71,7 @@
 
 .contacts__description{
     margin-bottom: 40px;
-
+    white-space: nowrap;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
