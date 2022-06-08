@@ -1,7 +1,5 @@
 .benefits{
-
     display: flex;
-
     @media screen and (max-width: 767px) {
         margin-top: 40px;
         transform: translateY(-600px);
@@ -20,7 +18,6 @@
     
     }
     .benefits__title{
- 
     text-align: left;
     font-weight: 800;
     font-size: 20px;
@@ -28,13 +25,14 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     @media screen and (max-width: 767px){  
-    margin: 0;
+    margin-left: 80px;
     margin-bottom: 32px;
     width: 180px;
     height: 50px;
-    text-align: left; }
+    text-align: left; 
+    }
     @media screen and (min-width:768px){
-    margin: 0;
+    
     padding: 40px 98px 25px 98px;
     text-align: left;
     }
@@ -66,21 +64,9 @@
     counter-reset: inventory;
     
     
-    @media screen and (min-width: 480px) {
-            padding-bottom: 24px;
-            padding-top: 20px;
-            
-            max-width: 450px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: flex-start;
-    
-        }
-    
     @media screen and (min-width: 768px){
-        padding: 32px 80px 32px 80px;
-            max-width: 704px;
+        padding: 64px 112px 40px 92px;
+            max-width: 688px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
@@ -88,14 +74,9 @@
             
             
         }
-    @media screen and (min-width: 1280px) {
-                max-width: 1210px;
-                padding-bottom: 45px;
-                padding-top: 45px;
-            }
     @media screen and (min-width: 1680px) {
                 max-width: 1648px;
-                padding: 60px 192px 60px 140px;
+                padding: 50px 112px 40px 92px;
                 
             }
     }
@@ -112,8 +93,10 @@
         margin-bottom: 40px;
     }
     @media screen and (min-width:768px) {
-            flex-basis: calc(100% / 2 - 30px);
+            flex-basis: calc(100% / 2 - 44px);
+            margin-bottom: 44px;
             margin-left: 30px;
+            width: 326px;
         }
     
         @media screen and (min-width:1680px) {
@@ -125,24 +108,33 @@
     }
             
     .benefits__item-line{
+        margin-top: 20px;
         width: 25px;
             height: 2px;
             background-color: #ff6b08;
     }
     .benefits__text::before {
+        margin-top: 6px;
     margin-bottom: 8px;
     counter-increment: inventory;
     content: "0" counter(inventory);
     display: block;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.65;
     transform: translatex(37px);
     color: #ff6b08;
+        @media screen and (min-width: 1680px) {
+            margin-top: 3px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.65;
+            letter-spacing: 0.08em;
+        }
     }
     .benefits__text{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.08em;    
     color: #111518;              
@@ -154,6 +146,7 @@
     
     }
     @media screen and (min-width: 1680px){
+        width: 356px;
     font-size: 20px;
     line-height: 1.4;
     }
