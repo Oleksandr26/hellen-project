@@ -1,3 +1,77 @@
+// <---Variant--1-->
+.hero{
+        overflow: hidden;
+        // height: 560px;
+        background-image: url(../images/herobg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 100%;
+    
+    @include mobile {
+    // max-width: 480px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+            background-image: url(../images/herobg-mobile@2x.png);
+        }
+    }
+    @include tablet {
+    // max-width: 768px;
+    background-image: url(../images/herobg-tab.png);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/herobg-tab@2x.png);
+        }
+    }
+    @include desktop {
+    // max-width: 1680px;
+    background-image: url(../images/herobg-desktop.png);
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/herobg-desktop@2x.png);
+        }
+    }
+     
+}
+@media screen and (min-width: 1440px) {
+    .hero {
+        animation: scale 5s infinite;
+    }
+    .hero__thumb{
+        animation: scale 5s infinite;
+    }
+    @keyframes scale {
+        0% {
+            background-size: 100%;
+        }
+
+        25% {
+            background-size: 150%;
+        }
+
+        50% {
+            background-size: 175%;
+        }
+
+        75% {
+            background-size: 150%;
+        }
+
+        100% {
+            background-size: 100%;
+        }
+    }
+}
+// <--Variant--2-->
+
+
+
+
+// <---End--of--variant-2>
 .hero__container {
     padding-top: 40px;
 
