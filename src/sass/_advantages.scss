@@ -1,19 +1,13 @@
 .advantages {
     justify-content: center;
-    margin-bottom: 45px;
-    background-color: #E5E5E5;
+    padding-bottom: 40px;
     @include tablet {
-        margin-bottom: 85px;
-    }
-    @include desktop {
-        margin-bottom: 85px;
+        padding-bottom: 80px;
     }
 }
 .advantages__list{    
-    list-style: none;
-    margin: 0;  
+    @extend %list; 
     justify-content: space-between;    
-    padding: 0;
     @include tablet {
         display: flex;
         flex-wrap: wrap;
@@ -34,18 +28,13 @@
     flex-basis: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    // width: 60px;
     height: 60px;
-    
+    color: $text-color-dark;
     &+&{
         margin-top: 24px;
         @include tablet {
             margin-top: 0px;
         }
-        @include desktop{
-            margin-top: 0px;
-        }
-
     }
     
     @include tablet {
