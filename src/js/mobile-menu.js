@@ -17,6 +17,6 @@
   }
   function removeMenu() {
       refs.menu.classList.remove("is-open");
-      refs.body.classList.add("no-scroll");
+      refs.body.classList.remove("no-scroll");
   }
 })();
