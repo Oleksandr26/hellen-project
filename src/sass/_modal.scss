@@ -39,15 +39,16 @@
 }
 
 .btn-modal--close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $accent-color;
-    border: none;
+    border-color: transparent;
     border-radius: 50%;
     margin-left: 0;
     margin-right: auto;
-    padding: 8px 14px;
-    align-items: center;
+    padding: 8px;
     margin-bottom: 20px;
-
 }
 
 .modal__title {
