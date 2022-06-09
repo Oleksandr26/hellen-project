@@ -1,11 +1,8 @@
 .advantages {
     justify-content: center;
-    margin-bottom: 45px;
+    padding-bottom: 40px;
     @include tablet {
-        margin-bottom: 85px;
-    }
-    @include desktop {
-        margin-bottom: 85px;
+        padding-bottom: 80px;
     }
 }
 .advantages__list{    
@@ -38,10 +35,6 @@
         @include tablet {
             margin-top: 0px;
         }
-        @include desktop{
-            margin-top: 0px;
-        }
-
     }
     
     @include tablet {
