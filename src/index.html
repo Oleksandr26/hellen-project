@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hellish English</title>
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      type="image/svg"
-      href="./images/favicon/favicon.svg"
-    />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -40,5 +40,20 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mob-modal.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+      });
+    </script>
+    <script src="./index.js"></script>
   </body>
 </html>

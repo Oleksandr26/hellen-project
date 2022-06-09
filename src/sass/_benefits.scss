@@ -5,12 +5,12 @@
         transform: translateY(-600px);
         margin-bottom: -600px;  
     }
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin-bottom: -175px;
         transform: translateY(-175px);
     }
     
-    @media screen and (min-width: 1680px) {
+    @include desktop {
         height: 191px;
         margin-bottom: 86px;
         transform: translateY(-150px);
@@ -31,18 +31,18 @@
     height: 50px;
     text-align: left; 
     }
-    @media screen and (min-width:768px){
+    @include tablet{
     
     padding: 40px 98px 25px 98px;
-    text-align: left;
+    text-align: center;
     }
-    @media screen and (min-width:1680px){
+    @include desktop{
         display: none;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    width: 50vw;
+    // padding-top: 80px;
+    // padding-bottom: 80px;
+    // width: 50vw;
     
-    font-size: 46px;
+    // font-size: 46px;
     }   
     
     }
@@ -50,7 +50,7 @@
         color: #FF6B09;
     }
     .benefits__list{
-    
+    @extend %list;
         margin: 0 auto;
         padding: 20px 12px 24px 32px;
         // max-width: 280px;
@@ -64,7 +64,7 @@
     counter-reset: inventory;
     
     
-    @media screen and (min-width: 768px){
+    @include tablet{
         padding: 64px 112px 40px 92px;
             // max-width: 767px;
             display: flex;
@@ -74,8 +74,11 @@
             
             
         }
-    @media screen and (min-width: 1680px) {
-                // max-width: 1648px;
+
+
+    @include desktop {
+                
+
                 padding: 50px 112px 40px 92px;
                 
             }
@@ -87,19 +90,17 @@
     line-height: 1.4;
     letter-spacing: 0.08em;
     color: #111518;
-    list-style: none;
-    text-decoration: none;
     @media screen and (max-width: 767px){  
         margin-bottom: 40px;
     }
-    @media screen and (min-width:768px) {
+    @include tablet {
             flex-basis: calc(100% / 2 - 44px);
             margin-bottom: 44px;
             margin-left: 30px;
             width: 326px;
         }
     
-        @media screen and (min-width:1680px) {
+        @include desktop {
             flex-basis: calc(100% / 3 - 30px);
             margin-left: 30px;
             margin-bottom: 40px;
@@ -124,7 +125,7 @@
     line-height: 1.65;
     transform: translatex(37px);
     color: #ff6b08;
-        @media screen and (min-width: 1680px) {
+        @include desktop {
             margin-top: 3px;
             font-weight: 700;
             font-size: 20px;
@@ -139,13 +140,13 @@
     letter-spacing: 0.08em;    
     color: #111518;              
     transform: translateY(-17px);
-    @media screen and (min-width:768px){
+    @include tablet{
     
     font-size: 14px;
     line-height: 1.43;
     
     }
-    @media screen and (min-width: 1680px){
+    @include desktop{
         width: 356px;
     font-size: 20px;
     line-height: 1.4;

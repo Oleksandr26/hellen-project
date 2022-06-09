@@ -6,14 +6,12 @@
     align-items: center;
     padding-top: 20px;
 
-    @media screen and (min-width:768px) {
+    @include tablet {
         padding-top: 40px;
     }
-
 }
 
 // Logo
-
 .logo__link {
     @extend %link;
 }
@@ -25,7 +23,7 @@
     line-height: 1.2;
     letter-spacing: 0.04em;
 
-    @media screen and (min-width:768px) {
+    @include tablet {
         font-weight: 800;
         font-size: 26px;
         line-height: 1.23;
@@ -46,7 +44,7 @@
         letter-spacing: 0.18em;
         text-transform: uppercase;
 
-        @media screen and (min-width:768px) {
+        @include tablet {
             font-size: 8px;
             line-height: 1.25;
             
@@ -63,7 +61,7 @@
     width: 14px;
     height: 19px;
 
-    @media screen and (min-width:768px) {
+    @include tablet {
         width: 22px;
         height: 30px;
     }
@@ -75,7 +73,6 @@
     align-items: center;
     margin-left: auto;
     margin-right: 0;
-    
 }
 
 .nav__list {
@@ -90,11 +87,10 @@
     
     text-transform: uppercase;
 
-    @media screen and (min-width:1678px) {
+    @include desktop {
         display: inline-flex;
         margin-right: 0;
         margin-left: auto;
-
     }
 }
 
@@ -105,6 +101,7 @@
 .nav__link {
     @extend %link;
     color: $text-color-lightgrey;
+    transition: color 250ms $timimg-function;
 
     &.current {
         color: $accent-color;
@@ -115,6 +112,7 @@
         color: $accent-color;
     }
 }
+
 .btn-nav--call {
     @extend %button;
     background-color: transparent;
@@ -127,12 +125,20 @@
     letter-spacing: 0.14em;
     color: $accent-color;
     text-transform: uppercase;
+    transition: color 250ms $timimg-function;
+    transition: background-color 250ms $timimg-function;
+
+    &:hover,
+    &:focus{
+        color: $text-color-white;
+        background-color: $accent-color;
+    }
 
     @media screen and (max-width:767px) {
         display: none;
     }
 
-    @media screen and (min-width:768px) {
+    @include tablet {
         margin-right: 40px;
         margin-left: 40px;
     }
@@ -144,13 +150,14 @@
     padding: 5px;
     border: none;
     box-shadow: none;
+    transition: fill 250ms $timimg-function;
 
     &:hover,
-    &:focus {
+    &:focus{
         fill: $accent-color;
     }
 
-    @media screen and (min-width:1680px){
+    @include desktop{
         display: none;
     }
 }
@@ -162,21 +169,22 @@
 
 // Mobile menu
 .mobile-menu {
-
-    display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
     padding: 20px;
     top: 0;
+    transform: translateX(-100%);
+    transition: transform 500ms linear;
 
     background-color: rgba(17, 21, 24, 0.9);
 
-    @media screen and (min-width:768px){
-        // padding: 40px;
+    &.is-open{
+        transform: translateX(0);
+        z-index: 2;
     }
 
-    @media screen and (min-width:1680px){
+    @include desktop{
         display: none;
     }
 }
@@ -185,7 +193,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         width: 728px;
         margin-left: auto;
         margin-right: auto;
@@ -220,7 +228,12 @@
     font-size: 20px;
     line-height: 1.8;
     letter-spacing: 0.03em;
+    transition: color 250ms $timimg-function;
 
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
 }
 
 .btn-menu--call {
@@ -236,8 +249,16 @@
     letter-spacing: 0.08em;
     color: $accent-color;
     text-transform: uppercase;
+    transition: color 250ms $timimg-function;
+    transition: background-color 250ms $timimg-function;
 
-    @media screen and (min-width:780px) {
+    &:hover,
+    &:focus{
+        color: $text-color-white;
+        background-color: $accent-color;
+    }
+
+    @include tablet {
         display: none;
     }
 }
