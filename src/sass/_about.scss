@@ -8,7 +8,7 @@
     @media screen and (min-width: 320px) and (max-width: 767px) {
         margin-left: 20px;
         margin-right: 20px;
-        width: 280;
+       
 
     }
 
@@ -187,6 +187,7 @@
 .about__desc {
     list-style: none;
     @media screen and (min-width: 320px) and (max-width: 767px) {
+        letter-spacing: normal;
                 font-weight: 500;
                 font-size: 12px;
                 line-height: 20px;
@@ -222,7 +223,8 @@
 
 .about__subtitle {
     @media screen and (min-width: 320px) and (max-width: 767px) {
-        white-space: nowrap;
+            letter-spacing: normal;
+            white-space: nowrap;
             font-weight: 500;
             font-size: 12px;
             line-height: 20px;
