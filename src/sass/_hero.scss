@@ -40,7 +40,7 @@
 }
 @media screen and (min-width: 1440px) {
     .hero {
-        animation: scale 5s infinite;
+        animation: scale 5s 3;
     }
     
     @keyframes scale {
@@ -65,7 +65,7 @@
         }
     }
         .hero__img {
-            animation: pulsing 2s $timimg-function infinite;
+            animation: pulsing 2s $timimg-function 3;
         }
                 @keyframes pulsing {
                     0% {
@@ -240,6 +240,4 @@
 
 .hero__img {
     width: 100%;
-
-
 }
