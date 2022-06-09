@@ -180,6 +180,7 @@
 
 .about__description {
     @media screen and (min-width: 320px) and (max-width: 767px) {
+        letter-spacing: normal;
         margin-top: 0;
     }
     padding-left: 0;
@@ -219,10 +220,22 @@
     line-height: 30px;
     display: block;
     position: relative;
-    transform: translateY(-15px)}
+    transform: translateY(-15px)
+}
+
+
 
 .about__subtitle {
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+            letter-spacing: normal;
+                white-space: nowrap;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                text-decoration-line: underline;
+                color: #FF6B09;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
             letter-spacing: normal;
             white-space: nowrap;
             font-weight: 500;
@@ -247,4 +260,8 @@
             text-decoration-line: underline;
             color: #FF6B09;
         }
+}
+.about__subtitle:hover {
+    cursor: pointer;
+    color: aqua;
 }
