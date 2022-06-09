@@ -1,7 +1,6 @@
 // <---Variant--1-->
 .hero{
         overflow: hidden;
-        // height: 560px;
         background-image: url(../images/herobg-mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -9,7 +8,6 @@
         padding-bottom: 40px;
     @include mobile {
         
-    // max-width: 480px;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -18,7 +16,7 @@
         }
     }
     @include tablet {
-    // max-width: 768px;
+
     background-image: url(../images/herobg-tab.png);
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -27,7 +25,7 @@
         }
     }
     @include desktop {
-    // max-width: 1680px;
+
     background-image: url(../images/herobg-desktop.png);
     
         @media (min-device-pixel-ratio: 2),
@@ -36,7 +34,6 @@
             background-image: url(../images/herobg-desktop@2x.png);
         }
     }
-     
 }
 @media screen and (min-width: 1440px) {
     .hero {
@@ -65,6 +62,7 @@
         }
     }
         .hero__img {
+            width: 100%;
             animation: pulsing 2s $timimg-function 3;
         }
                 @keyframes pulsing {
@@ -127,7 +125,6 @@
     @include desktop {
         font-size: 58px;
     }
-
 }
 
 .hero__text {
@@ -185,7 +182,6 @@
     @include desktop {
         width: 354px;
     }
-
 }
 
 .hero__link {
@@ -203,17 +199,16 @@
     line-height: 1.25;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    transition: color 250ms $timimg-function, 
+        border 250ms $timimg-function, 
+        background-color 250ms $timimg-function;
+
     &:hover,
     &:focus{
         color: $accent-color;
         border: 2px solid $accent-color;
         background-color: $text-color-white;
-        transition: color 250ms $timimg-function,
-                background-color 250ms $timimg-function,
-                border 250ms $timimg-function;
     }
-
-    
 
     @include desktop {
         padding-top: 27px;
@@ -236,12 +231,6 @@
 
     @include desktop{
         width: 840px;
-        // margin-right: 0;
-        // margin-left: auto;
     }
 
-}
-
-.hero__img {
-    width: 100%;
 }

@@ -9,11 +9,9 @@
     @include tablet {
         padding-top: 40px;
     }
-
 }
 
 // Logo
-
 .logo__link {
     @extend %link;
 }
@@ -75,7 +73,6 @@
     align-items: center;
     margin-left: auto;
     margin-right: 0;
-    
 }
 
 .nav__list {
@@ -94,7 +91,6 @@
         display: inline-flex;
         margin-right: 0;
         margin-left: auto;
-
     }
 }
 
@@ -105,6 +101,7 @@
 .nav__link {
     @extend %link;
     color: $text-color-lightgrey;
+    transition: color 250ms $timimg-function;
 
     &.current {
         color: $accent-color;
@@ -115,6 +112,7 @@
         color: $accent-color;
     }
 }
+
 .btn-nav--call {
     @extend %button;
     background-color: transparent;
@@ -127,6 +125,9 @@
     letter-spacing: 0.14em;
     color: $accent-color;
     text-transform: uppercase;
+    transition: color 250ms $timimg-function;
+    transition: background-color 250ms $timimg-function;
+
     &:hover,
     &:focus{
         color: $text-color-white;
@@ -149,6 +150,7 @@
     padding: 5px;
     border: none;
     box-shadow: none;
+    transition: fill 250ms $timimg-function;
 
     &:hover,
     &:focus{
@@ -167,8 +169,6 @@
 
 // Mobile menu
 .mobile-menu {
-
-    // display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -183,11 +183,6 @@
         transform: translateX(0);
         z-index: 2;
     }
-
-
-    // @include tablet{
-    //     // padding: 40px;
-    // }
 
     @include desktop{
         display: none;
@@ -233,11 +228,12 @@
     font-size: 20px;
     line-height: 1.8;
     letter-spacing: 0.03em;
+    transition: color 250ms $timimg-function;
+
     &:hover,
     &:focus{
         color: $accent-color;
     }
-
 }
 
 .btn-menu--call {
@@ -253,6 +249,8 @@
     letter-spacing: 0.08em;
     color: $accent-color;
     text-transform: uppercase;
+    transition: color 250ms $timimg-function;
+    transition: background-color 250ms $timimg-function;
 
     &:hover,
     &:focus{
