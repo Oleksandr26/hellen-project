@@ -7,9 +7,6 @@
     background-color: $bg-color-dark;
     padding: 93px 15px 94px 15px;
     overflow-y: scroll;
-    // top: 0;
-    // width: 100vw;
-    // height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 320ms $timimg-function, visibility 250ms $timimg-function;
@@ -39,15 +36,17 @@
 }
 
 .btn-modal--close {
+    @extend %button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $accent-color;
-    border: none;
+    border-color: transparent;
     border-radius: 50%;
     margin-left: 0;
     margin-right: auto;
-    padding: 8px 14px;
-    align-items: center;
+    padding: 8px;
     margin-bottom: 20px;
-
 }
 
 .modal__title {
