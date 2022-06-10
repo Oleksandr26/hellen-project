@@ -164,6 +164,9 @@
         }
 @include desktop {
     .problems {
+        &__item {
+                flex-basis: calc(100% / 3 - 30px);
+            }
         &__icon {
                 z-index: -1;
         }
