@@ -125,20 +125,27 @@ padding-bottom:40px;
         //     padding-right: 50px;
         //     padding-left: 50px;
         // }
-        @media screen and(min-width:1440px) {                    
-                    flex-basis: calc(100% / 2 - 32px);
-                    margin-left: 32px;
-        &:nth-child(n+5) {
-                    margin-bottom: 0px;
-                }
-        }
+        // @media screen and(min-width:1440px) {                    
+        //             flex-basis: calc(100% / 2 - 32px);
+        //             margin-left: 32px;
+        // &:nth-child(n+5) {
+        //             margin-bottom: 0px;
+        //         }
+        // }
 
         @include desktop {
             // width: 433px;
             // height: 397px;
             padding-right: 40px;
             padding-left: 40px;
+            @media screen and(min-width:1680px) {                    
+                    flex-basis: calc(100% / 3 - 32px);
+                    margin-left: 32px;
+        &:nth-child(n+4) {
+                    margin-bottom: 0px;
+                }
         }
+    }
 
     }
 
