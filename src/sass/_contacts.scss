@@ -120,10 +120,12 @@
 }
 }
     &:not(:placeholder-shown):required:valid{
-        border-color: green;
+        &:not(:focus){
+            border-color: green;}
 }
     &:not(:placeholder-shown):required:invalid {
-        border-color: red;
+        &:not(:focus){
+            border-color: red;}
 }
 }
 
